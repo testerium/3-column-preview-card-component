@@ -1,0 +1,118 @@
+:root {
+	--Bright-orange: hsl(31, 77%, 52%);
+	--Dark-cyan: hsl(184, 100%, 22%);
+	--Very-dark-cyan: hsl(179, 100%, 13%);
+
+	--Transparent-white: hsla(0, 0%, 100%, 0.75); 
+	--Very-light-gray: hsl(0, 0%, 95%);  
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--Very-light-gray);
+	font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+img {
+
+}
+
+h1 {
+	color: var(--Very-light-gray);
+	text-transform: uppercase;
+	margin: 25px 0px;
+	font-family: 'Big Shoulders Display';
+	font-size: 40px;
+}
+
+p {
+	color: var(--Transparent-white);
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container {
+	display: flex;
+	justify-content: flex-start;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 40px;
+}
+
+.column {
+	width: 300px;
+	height: 500px;
+	color: var(--Very-light-gray);
+	padding: 50px; 
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.column:nth-child(1) {
+	background: var(--Bright-orange);
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.column:nth-child(2) {
+	background: var(--Dark-cyan); 
+}
+
+.column:nth-child(3) {
+	background: var(--Very-dark-cyan);
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.button1, .button2, .button3 {
+	background: var(--Very-light-gray);
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	text-decoration: none;
+	border-radius: 26px;
+	display: block;
+	padding: 14px;
+}
+
+.button1 {
+	color: var(--Bright-orange);
+}
+
+.button2 {
+	color: var(--Dark-cyan);
+}
+
+.button3 {
+	color: var(--Very-dark-cyan);
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+	cursor: pointer;
+	border: 2px solid var(--Transparent-white);
+	color: var(--Transparent-white);
+}
+
+.button1:hover {
+	background: var(--Bright-orange);
+}
+
+.button2:hover {
+	background: var(--Dark-cyan);
+}
+
+.button3:hover {
+	background: var(--Very-dark-cyan);
+}
